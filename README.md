@@ -1,6 +1,6 @@
 # CDT
 This repository provides an open-source implementation of the paper **CDT: A Comprehensive Capability Framework for Large Language Models Across Cognition, Domain, and Task.** It includes methods for annotating datasets with capability tags across the three dimensions and for selecting data in general and specific scenarios.
-![image](assets/CDT.png)
+<img src="assets/CDT.png" alt="image" width="300" />
 
 ## Directory Structure
 
