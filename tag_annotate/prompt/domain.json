@@ -1,0 +1,11 @@
+{
+    "Language": ["Linguistics", "Literature", "Multilingualism"],
+    "Culture": ["Tradition", "Art", "Sports", "Mass Media", "Music", "Food"],
+    "Health": ["Health"],
+    "Natural Science": ["Biology", "Earth Science", "Astronomy", "Chemistry", "Physics"],
+    "Math": ["Mathematics", "Logic"],
+    "Social Science": ["Economics", "Law", "Politics", "Education", "Sociology"],
+    "Technology": ["Agriculture", "Computer Science", "Automation", "Electronics", "Engineering"],
+    "Coding": ["Coding"],
+    "Humanities": ["Communication", "Religion", "Philosophy", "Ethics", "History"]
+}

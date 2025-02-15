@@ -1,0 +1,15 @@
+{
+    "Generation": "Creating new information with human-input conditions, involving the automatic generation of various text materials following the instruction given by the user.",
+    "Rewrite": "Taking a piece of text and rephrasing it while preserving its original meaning, which may involve simplifying the language, changing the structure, or adjusting the tone.",
+    "Summarization": "Condensing longer texts into shorter versions while retaining the key information and main ideas, making it easier to digest complex information.",
+    "Classification": "Assigning predefined labels or categories to text based on its content, such as topic categorization.",
+    "Brainstorming": "Generating ideas, encouraging creative thinking, or exploring possibilities.",
+    "Sentiment": "Determining the emotional tone or sentiment expressed in a piece of text.",
+    "Completion": "Continuing a given prompt with relevant and contextually appropriate content, such as finishing sentences or filling in blanks.",
+    "Natural Language Inference": "Assessing the relationship between two sentences to determine if one logically follows from the other (entailment), contradicts it (contradiction), or if the relationship is unclear (neutral).",
+    "Bias and Fairness": "Evaluating models for potential bias, fairness, or harmfulness in their outputs.",
+    "Word Sense Disambiguation": "Determining which meaning of a word is used in a given context, especially for words that have multiple meanings.",
+    "Multiple Choice QA": "Answering questions by selecting the correct option from a predefined set of possible answers based on provided information or context.",
+    "Closed Book QA": "Answering questions directly without access to external knowledge.",
+    "Extractive QA": "Identifying and extracting specific pieces of information from a given text to answer the question."
+}

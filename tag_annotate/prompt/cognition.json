@@ -1,0 +1,18 @@
+{
+    "PR": "Ability to identify recurring patterns, trends, or sequences within a given set of data or materials (e.g., detecting similarities in a sequence of numbers or text).",
+    "CA": "Ability to form abstract concepts or categories based on shared characteristics or relationships among a set of materials.",
+    "HP": "Ability to propose plausible explanations or predictions for incomplete information (e.g., inferring causes of a fictional conflict, suggesting scientific hypotheses).",
+    "RG": "Ability to start with stated rules, premises, or conditions, and to engage in one or more steps to reach a solution to a novel problem.",
+    "RQ": "Ability to inductively and deductively reason with concepts involving mathematical relations and properties.",
+    "CM": "Ability to mimic speak in real-life situations (e.g., lecture, group participation) in an adult-like manner.",
+    "A3": "Measured mathematics achievement.",
+    "RD": "Ability to recognize and decode words or pseudowords in reading.",
+    "WA": "Ability to write with clarity of thought, organization, and good sentence structure.",
+    "NA": "Ability to rapidly produce names for concepts when presented with a text cue.",
+    "FA": "Ability to rapidly produce a series of original or useful ideas related to a particular concept.",
+    "FE": "Ability to rapidly think of different ways of expressing an idea.",
+    "SP": "Ability to rapidly think of a number of solutions to particular practical problem.",
+    "FO": "Ability to rapidly produce original, clever, and insightful responses (expressions, interpretations) to a given topic, situation, or task.",
+    "FI": "Ability to rapidly produce a series of ideas, words, or phrases related to a specific condition or object. Quantity, not quality, is emphasized.",
+    "FW": "Ability to rapidly produce words that have specific phonemic, structural, or orthographic characteristics (independent of word meanings)."
+  }
