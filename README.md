@@ -7,13 +7,13 @@ This repository provides an open-source implementation of the paper **CDT: A Com
 ## Directory Structure
 
 - **[tag_annotate](tag_annotate)**: This folder contains the core components for tagging instructions based on the CDT framework.
-  - **Prompt Files**: Templates for creating prompts used by the tag annotator.
+  - **Prompt Files**: Prompts used by the tag annotator.
   - **Tagging Code**: Python scripts responsible for annotating instructions with capability tags.
   - **Tag Post-Processing**: Code for cleaning and refining the tags after they’ve been assigned.
 
 - **[data_selection](data_selection)**: This folder includes methods for data selection in general and specific scenarios.
-  - **General Scenario Selection**: Code for general scenarios data selection.
-  - **Special Scenario Selection**: Code for specific scenarios data selection.
+  - **General Scenario Selection**: Code for general scenario data selection.
+  - **Special Scenario Selection**: Code for specific scenario data selection.
 
 ## How to Use
 
