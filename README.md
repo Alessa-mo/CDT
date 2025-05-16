@@ -12,7 +12,7 @@ This repository provides an open-source implementation of the paper **CDT: A Com
   - **Tag Post-Processing**: Code for cleaning and refining the tags after they’ve been assigned.
 
 - **[dataset_evaluation](dataset_evaluation)**: This folder includes methods for computing Balance and Coverage metrics.
-- 
+  
 - **[data_selection](data_selection)**: This folder includes methods for data selection in general and specific scenarios.
   - **General Scenario Selection**: Code for general scenario data selection.
   - **Special Scenario Selection**: Code for specific scenario data selection.
