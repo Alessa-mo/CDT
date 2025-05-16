@@ -10,6 +10,9 @@
     "Bias and Fairness": "Evaluating models for potential bias, fairness, or harmfulness in their outputs.",
     "Word Sense Disambiguation": "Determining which meaning of a word is used in a given context, especially for words that have multiple meanings.",
     "Multiple Choice QA": "Answering questions by selecting the correct option from a predefined set of possible answers based on provided information or context.",
-    "Closed Book QA": "Answering questions directly without access to external knowledge.",
-    "Extractive QA": "Identifying and extracting specific pieces of information from a given text to answer the question."
+    "Closed QA": "Answering specific questions within a limited domain or context, often with precise fact-based answers.",
+    "Open QA": "Answering open-ended questions that can cover a wide range of topics, often without a single, definitive answer.",
+    "Extraction": "Identifying and extracting specific pieces of information from a given text.",
+    "Program Execution": "Executing or simulating the execution of a given program or script, processing inputs, performing operations, and returning outputs based on the specified instructions, often including code interpretation or debugging.",
+    "Detection": "Identifying the presence of specific elements, patterns, or anomalies in a given text, such as detecting spam or certain linguistic features like named entities or grammatical errors."
 }
