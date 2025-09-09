@@ -4,7 +4,10 @@ This repository provides an open-source implementation of the paper **CDT: A Com
     <img src="assets/CDT.png" alt="image" width="500" />
 </div>
 
-## Directory Structure
+## 🔗Links
+You can download the tagging models from this link: [CDT](todo)
+
+## ⚙️Directory Structure
 
 - **[tag_annotate](tag_annotate)**: This folder contains the core components for tagging instructions based on the CDT framework.
   - **Prompt Files**: Prompts used by the tag annotator.
@@ -17,9 +20,11 @@ This repository provides an open-source implementation of the paper **CDT: A Com
   - **General Scenario Selection**: Code for general scenario data selection.
   - **Special Scenario Selection**: Code for specific scenario data selection.
 
-## How to Use
+- **[data](data)**: This folder includes the data used in the paper.
 
-1. **Tagging Instructions**: To annotate a dataset, use the code provided in the `tag_annotate` folder. First, execute the Python script `annotate.py` to assign capability tags to the datasets. Next, run the script `postprocess_tag.py` to clean and refine the annotations. Finally, execute `combine_tags.py` to combine all the tags across the three dimensions: cognition, domain, and task.
+## 🚀Usage
+
+1. **Tagging Instructions**: To annotate a dataset, use the code provided in the `tag_annotate` folder. First, execute the Python script `annotate.py` to assign capability tags to the datasets. Next, run the script `postprocess_tag.py` to clean and refine the annotations. Finally, execute `merge_tags.py` to combine all the tags across the three dimensions: cognition, domain, and task.
 
 2. **Dataset Evaluation**: Given a dataset that has already been annotated with capability tags, use the python file in the `dataset_evaluation` folder to compute the Balance and Coverage metrics.
 
