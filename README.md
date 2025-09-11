@@ -5,9 +5,11 @@ This repository provides an open-source implementation of the paper **CDT: A Com
 </div>
 
 ## 🔗Links
-You can download the tagging models from this link: [CDT](todo)
+Paper: [CDT: A Comprehensive Capability Framework for Large Language Models Across Cognition, Domain, and Task](todo)
 
-## ⚙️Directory Structure
+You can download the tagging models from this link: [CDT](https://huggingface.co/Alessamo/models)
+
+## 🗂️Directory Structure
 
 - **[tag_annotate](tag_annotate)**: This folder contains the core components for tagging instructions based on the CDT framework.
   - **Prompt Files**: Prompts used by the tag annotator.
@@ -21,6 +23,17 @@ You can download the tagging models from this link: [CDT](todo)
   - **Special Scenario Selection**: Code for specific scenario data selection.
 
 - **[data](data)**: This folder contains the data used in the paper, including the tagged data pool and the data selected by CDT in both scenarios.
+
+- **[train](train)**: This folder contains the configuration files for training in our experiments.
+
+## ⚙️Environment Setup
+
+To install all the relevant packages, run the following:
+
+```bash
+conda create -n [environment_name] --file requirements.txt
+conda activate [environment_name]
+```
 
 ## 🚀Usage
 ### Data preparation
@@ -46,6 +59,7 @@ Make sure your data is a JSON file and has the following format:
 To tag capability labels, run the following scripts:
 ```bash
 cd tag_annotate
+export CUDA_VISIBLE_DEVICES=0
 python annotate.py \
     --data_path path/to/your/data \
     --output_dir path/to/output/dir \
@@ -134,6 +148,7 @@ python run_metrics.py \
 ```
 Then it will print out the Coverage and Balance metrics.
 
+<a id="data-selection"></a>
 ### Data Selection
 #### Diversity Scenario
 First, use the preceding scripts to label the capabilities of the data pool. Then, run the following scripts to select data for general scenarios based on diversity
@@ -146,7 +161,7 @@ python diversity.py \
 ```
 Important parameters:
 - `--top_p`: The top-p threshold. It determines the proportion of the total data to select.
-### Specific Scenario
+#### Specific Scenario
 First, use the preceding scripts to label the capabilities of the data pool and the validation dataset. Then, run the following scripts to select data for specific scenarios based on the capability tags in validation set.
 ```bash:
 cd data_selection
@@ -156,7 +171,30 @@ python specific.py \
     --output_file path/to/output/file \
     --top_p 0.2
 ```
-
+### Training
+We use LLama Factory to train the model. Please refer to the [LLama Factory](https://github.com/hiyouga/LLaMA-Factory) repository for installation and usage instructions.
+Before training, you need to specify the location of the dataset obtained in the [previous step](#data-selection) in the `dataset_info.json` file,  located in the `data` folder of the LLama-Factory repository. An example is as follows:
+```json
+{
+    "dataset_name": {
+    "file_name": "file_path",
+    "formatting": "sharegpt",
+    "columns": {
+        "messages": "messages"
+    },
+    "tags": {
+        "role_tag": "role",
+        "content_tag": "content",
+        "user_tag": "user",
+        "assistant_tag": "assistant"
+    }
+  },
+}
+```
+Then, run the following scripts to train the model:
+```bash
+CUDA_VISIBLE_DEVICES=0,1 llamafactory-cli train LLaMA-Factory/CDT.yaml
+```
 ## 📜 Citation
 If you find this work useful, please cite:
 ```bash
@@ -164,3 +202,5 @@ If you find this work useful, please cite:
 
 ## 💡 Acknowledgments
 We extend our gratitude to the following resources that contributed to this work:
+- **Flask**: This work references insights from [Flask](https://github.com/kaistAI/FLASK).
+- **LLaMA Factory**: The training pipeline leverages [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory), which provided efficient implementation and infrastructure for model fine-tuning.
