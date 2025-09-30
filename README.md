@@ -5,7 +5,7 @@ This repository provides an open-source implementation of the paper **CDT: A Com
 </div>
 
 ## 🔗Links
-Paper: [CDT: A Comprehensive Capability Framework for Large Language Models Across Cognition, Domain, and Task](todo)
+Paper: [CDT: A Comprehensive Capability Framework for Large Language Models Across Cognition, Domain, and Task](https://arxiv.org/abs/2509.24422)
 
 You can download the tagging models from this link: [CDT](https://huggingface.co/Alessamo/models)
 
@@ -198,6 +198,15 @@ CUDA_VISIBLE_DEVICES=0,1 llamafactory-cli train LLaMA-Factory/CDT.yaml
 ## 📜 Citation
 If you find this work useful, please cite:
 ```bash
+@misc{mo2025cdtcomprehensivecapabilityframework,
+      title={CDT: A Comprehensive Capability Framework for Large Language Models Across Cognition, Domain, and Task}, 
+      author={Haosi Mo and Xinyu Ma and Xuebo Liu and Derek F. Wong and Yu Li and Jie Liu and Min Zhang},
+      year={2025},
+      eprint={2509.24422},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.24422}, 
+}
 ```
 
 ## 💡 Acknowledgments
